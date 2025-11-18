@@ -8,10 +8,14 @@
   --color-secondary-700: #d4e9e2;
   --color-secondary-600: #dff6ba;
   --color-dark: #000000;
+
+  --spacing-content: min(1390px, 100% - 40px);
+  --spacing-50: 50px;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 0.85rem + 0.5vw, 1.125rem);
 }
 
 h1,
@@ -20,3 +24,29 @@ h3,
 h4 {
   font-family: 'Playfair Display', serif;
 }
+
+h1 {
+  font-size: clamp(2.2rem, 1.2rem + 3vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 1.1rem + 2.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.6rem, 1rem + 1.8vw, 2.25rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 0.9rem + 1.5vw, 1.75rem);
+}
+
+h5 {
+  font-size: clamp(1.2rem, 0.8rem + 1vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1.1rem, 0.74rem + 0.8vw, 1.25rem);
+}
+
+
